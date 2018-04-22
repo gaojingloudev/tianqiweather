@@ -1,4 +1,4 @@
-package com.example.tianqiweather;
+package com.tianqiweather.android;
 
 import org.junit.Test;
 

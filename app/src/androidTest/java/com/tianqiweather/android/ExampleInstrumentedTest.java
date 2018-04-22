@@ -1,4 +1,4 @@
-package com.example.tianqiweather;
+package com.tianqiweather.android;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

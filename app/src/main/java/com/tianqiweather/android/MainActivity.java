@@ -1,4 +1,4 @@
-package com.example.tianqiweather;
+package com.tianqiweather.android;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

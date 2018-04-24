@@ -1,6 +1,7 @@
 package com.tianqiweather.android;
 
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.graphics.Color;
@@ -24,6 +25,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.tianqiweather.android.gson.Forecast;
 import com.tianqiweather.android.gson.Weather;
+import com.tianqiweather.android.service.AutoUpdateService;
 import com.tianqiweather.android.util.HttpUtil;
 import com.tianqiweather.android.util.Utility;
 
@@ -251,5 +253,7 @@ public class WeatherActivity extends AppCompatActivity {
         carWashText.setText(carWash);
         sportText.setText(sport);
         weatherLayout.setVisibility(View.VISIBLE);
+        Intent intent = new Intent(this, AutoUpdateService.class);
+        startService(intent);
     }
 }
